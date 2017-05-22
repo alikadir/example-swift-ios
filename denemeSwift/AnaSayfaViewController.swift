@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AnaSayfaViewController.swift
 //  denemeSwift
 //
 //  Created by Ali Kadir BAGCIOGLU on 22/05/2017.
@@ -8,11 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AnaSayfaViewController: UIViewController {
 
-    @IBOutlet weak var myLabel: UILabel!
-    @IBOutlet weak var myImage: UIImageView!
-    
+    @IBOutlet weak var GelenParametreTxt: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,19 +20,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    var sayi:IntMax?;
-    @IBAction func btnClick(_ sender: Any) {
-       
-        if(sayi == nil)
-        {
-            sayi = 5;
-        }
-        sayi? += 1;
-        
-        print("butona basıldı");
-        myLabel.text = String(sayi!);
-    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+
+        if (segue.identifier == "ParametreliNavigasyonPush") {
+
+            (segue.destination as! NavigasyonParametresiViewController).GelenParametre = GelenParametreTxt.text;
+        }
+    }
 }
 

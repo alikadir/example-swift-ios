@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */; };
+		817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */; };
 		81BA5F9C1ED2E3130029724A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5F9B1ED2E3130029724A /* AppDelegate.swift */; };
-		81BA5F9E1ED2E3130029724A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5F9D1ED2E3130029724A /* ViewController.swift */; };
+		81BA5F9E1ED2E3130029724A /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5F9D1ED2E3130029724A /* AnaSayfaViewController.swift */; };
 		81BA5FA11ED2E3130029724A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BA5F9F1ED2E3130029724A /* Main.storyboard */; };
 		81BA5FA31ED2E3130029724A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81BA5FA21ED2E3130029724A /* Assets.xcassets */; };
 		81BA5FA61ED2E3130029724A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BA5FA41ED2E3130029724A /* LaunchScreen.storyboard */; };
@@ -22,12 +24,15 @@
 		81BA5FD31ED2EC300029724A /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81BA5FC91ED2EC300029724A /* 7.jpg */; };
 		81BA5FD41ED2EC300029724A /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81BA5FCA1ED2EC300029724A /* 8.jpg */; };
 		81BA5FD51ED2EC300029724A /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81BA5FCB1ED2EC300029724A /* 9.jpg */; };
+		81BA5FD81ED309C20029724A /* ClassInheritanceOrnegi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5FD71ED309C20029724A /* ClassInheritanceOrnegi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SayiArttirViewController.swift; sourceTree = "<group>"; };
+		817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigasyonParametresiViewController.swift; sourceTree = "<group>"; };
 		81BA5F981ED2E3130029724A /* denemeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = denemeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA5F9B1ED2E3130029724A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81BA5F9D1ED2E3130029724A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81BA5F9D1ED2E3130029724A /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
 		81BA5FA01ED2E3130029724A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81BA5FA21ED2E3130029724A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81BA5FA51ED2E3130029724A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		81BA5FC91ED2EC300029724A /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		81BA5FCA1ED2EC300029724A /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		81BA5FCB1ED2EC300029724A /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		81BA5FD71ED309C20029724A /* ClassInheritanceOrnegi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassInheritanceOrnegi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		817D25D81ED331A700DC8AC2 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				81BA5F9D1ED2E3130029724A /* AnaSayfaViewController.swift */,
+				817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */,
+				817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */,
+			);
+			name = Pages;
+			sourceTree = "<group>";
+		};
 		81BA5F8F1ED2E3130029724A = {
 			isa = PBXGroup;
 			children = (
@@ -74,13 +90,14 @@
 		81BA5F9A1ED2E3130029724A /* denemeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				817D25D81ED331A700DC8AC2 /* Pages */,
 				81BA5FD61ED2EC410029724A /* Images */,
 				81BA5F9B1ED2E3130029724A /* AppDelegate.swift */,
-				81BA5F9D1ED2E3130029724A /* ViewController.swift */,
 				81BA5F9F1ED2E3130029724A /* Main.storyboard */,
 				81BA5FA21ED2E3130029724A /* Assets.xcassets */,
 				81BA5FA41ED2E3130029724A /* LaunchScreen.storyboard */,
 				81BA5FA71ED2E3130029724A /* Info.plist */,
+				81BA5FD71ED309C20029724A /* ClassInheritanceOrnegi.swift */,
 			);
 			path = denemeSwift;
 			sourceTree = "<group>";
@@ -184,7 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81BA5F9E1ED2E3130029724A /* ViewController.swift in Sources */,
+				817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */,
+				817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */,
+				81BA5F9E1ED2E3130029724A /* AnaSayfaViewController.swift in Sources */,
+				81BA5FD81ED309C20029724A /* ClassInheritanceOrnegi.swift in Sources */,
 				81BA5F9C1ED2E3130029724A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +367,7 @@
 				81BA5FAC1ED2E3130029724A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
