@@ -10,6 +10,9 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var myImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,7 +22,19 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    var sayi:IntMax?;
+    @IBAction func btnClick(_ sender: Any) {
+       
+        if(sayi == nil)
+        {
+            sayi = 5;
+        }
+        sayi? += 1;
+        
+        print("butona basıldı");
+        myLabel.text = String(sayi!);
+    }
 
 }
 
