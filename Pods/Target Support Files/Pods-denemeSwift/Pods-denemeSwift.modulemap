@@ -1,0 +1,6 @@
+framework module Pods_denemeSwift {
+  umbrella header "Pods-denemeSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}
