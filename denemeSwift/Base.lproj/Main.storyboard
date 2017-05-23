@@ -30,7 +30,7 @@
         <!--Ana Sayfa-->
         <scene sceneID="a7T-hk-a0j">
             <objects>
-                <viewController id="jin-8A-OF3" customClass="AnaSayfaViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AnaSayfaVC" id="jin-8A-OF3" customClass="AnaSayfaViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yjo-aO-FCb"/>
                         <viewControllerLayoutGuide type="bottom" id="YdU-Dt-ye4"/>
@@ -63,6 +63,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hkr-cP-VF4">
+                                <rect key="frame" x="29" y="167" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Manuel Push"/>
+                                <connections>
+                                    <action selector="btnManuelPushClick" destination="jin-8A-OF3" eventType="touchUpInside" id="OND-ee-Ttb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -78,7 +86,7 @@
         <!--Gelen Parametre-->
         <scene sceneID="DtX-DX-nh6">
             <objects>
-                <viewController id="TxR-mm-qHA" customClass="NavigasyonParametresiViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NavigasyonParametresiVC" id="TxR-mm-qHA" customClass="NavigasyonParametresiViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LjU-KS-K0G"/>
                         <viewControllerLayoutGuide type="bottom" id="1P0-qC-hMm"/>
@@ -112,12 +120,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u58-kR-UGw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2503" y="46"/>
+            <point key="canvasLocation" x="778" y="888"/>
         </scene>
         <!--Sayı Arttır-->
         <scene sceneID="atd-LC-LeI">
             <objects>
-                <viewController id="4U9-ii-juj" customClass="SayiArttirController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SayiArttirVC" id="4U9-ii-juj" customClass="SayiArttirController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eK5-NR-Pl9"/>
                         <viewControllerLayoutGuide type="bottom" id="oo6-ri-sT1"/>
