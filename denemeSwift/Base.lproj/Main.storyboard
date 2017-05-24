@@ -200,7 +200,27 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lnI-JM-4Ig">
-                                <rect key="frame" x="27" y="277" width="240" height="128"/>
+                                <rect key="frame" x="27" y="277" width="240" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sog-7k-diB">
+                                <rect key="frame" x="124" y="244" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Yenile"/>
+                                <connections>
+                                    <action selector="btnRefresh" destination="YIa-Y3-JVH" eventType="touchUpInside" id="bDM-G2-V2V"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="FEp-L6-zXD">
+                                <rect key="frame" x="177" y="249" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yQv-Yb-mVH">
+                                <rect key="frame" x="27" y="400" width="240" height="115"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52H-Kg-Td9">
+                                <rect key="frame" x="27" y="523" width="240" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -208,7 +228,10 @@
                     </view>
                     <navigationItem key="navigationItem" title="Resim Ve Data" id="j2X-dH-alS"/>
                     <connections>
-                        <outlet property="remoteImageView" destination="lnI-JM-4Ig" id="gK2-6r-st0"/>
+                        <outlet property="firstRemoteImage" destination="lnI-JM-4Ig" id="ShP-fB-4pl"/>
+                        <outlet property="imgActivityIndicator" destination="FEp-L6-zXD" id="FWt-6x-S81"/>
+                        <outlet property="secondRemoteImage" destination="yQv-Yb-mVH" id="nHm-kL-DoW"/>
+                        <outlet property="thirdRemoteImage" destination="52H-Kg-Td9" id="zVr-Mg-uFa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zKS-Lv-aT8" userLabel="First Responder" sceneMemberID="firstResponder"/>

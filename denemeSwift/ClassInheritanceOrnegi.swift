@@ -14,7 +14,6 @@ class Araba
     var hiz: Int = 0;
     var durum: String
     {
-        
         if hiz < 50 {
             return "yavaş";
         }
@@ -26,6 +25,12 @@ class Araba
         }
     }
 }
+
+
+
+
+
+
 
 class AkilliAraba: Araba
 {
