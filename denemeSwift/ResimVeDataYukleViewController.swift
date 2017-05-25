@@ -13,6 +13,7 @@ import AlamofireImage
 class ResimVeDataYukleViewController: UIViewController
 {
 
+    @IBOutlet weak var localImage: UIImageView!
     @IBOutlet weak var firstRemoteImage: UIImageView!
     @IBOutlet weak var secondRemoteImage: UIImageView!
     @IBOutlet weak var thirdRemoteImage: UIImageView!
@@ -38,9 +39,15 @@ class ResimVeDataYukleViewController: UIViewController
     func imgLoad()
     {
 
+        // local image'ları random seçiyoruz.
+        let rndImage = arc4random_uniform(9);
+        localImage.image = UIImage(named: String(rndImage) + ".jpg");
+        //--------------------------------------
+        
+        
         imgActivityIndicator.startAnimating();
 
-        /***************
+        /**************
          INFO
          ***************
          Bu bölümde documentDirectory isimli bir klasöre yükleme esnasında dosyanın temp'ini yazdırmak için kullanıyoruz.

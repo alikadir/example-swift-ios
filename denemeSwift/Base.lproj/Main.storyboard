@@ -230,6 +230,7 @@
                     <connections>
                         <outlet property="firstRemoteImage" destination="lnI-JM-4Ig" id="ShP-fB-4pl"/>
                         <outlet property="imgActivityIndicator" destination="FEp-L6-zXD" id="FWt-6x-S81"/>
+                        <outlet property="localImage" destination="bkE-2P-JaJ" id="uly-JD-y3v"/>
                         <outlet property="secondRemoteImage" destination="yQv-Yb-mVH" id="nHm-kL-DoW"/>
                         <outlet property="thirdRemoteImage" destination="52H-Kg-Td9" id="zVr-Mg-uFa"/>
                     </connections>
