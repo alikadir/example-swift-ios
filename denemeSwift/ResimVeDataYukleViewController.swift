@@ -20,6 +20,7 @@ class ResimVeDataYukleViewController: UIViewController
 
     @IBOutlet weak var imgActivityIndicator: UIActivityIndicatorView!
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -43,8 +44,8 @@ class ResimVeDataYukleViewController: UIViewController
         let rndImage = arc4random_uniform(9);
         localImage.image = UIImage(named: String(rndImage) + ".jpg");
         //--------------------------------------
-        
-        
+
+
         imgActivityIndicator.startAnimating();
 
         /**************
@@ -74,6 +75,7 @@ class ResimVeDataYukleViewController: UIViewController
                 }
             }
         }
+
 
         Alamofire.download("http://lorempixel.com/400/200/", to: destination).responseData { response in
             switch(response.result)

@@ -8,8 +8,16 @@
 
 import Foundation
 
-class Araba
+
+protocol IArac {
+    var hiz: Int { get set };
+    func deneme1(sayi1: Int) -> Int;
+
+}
+
+class Araba: IArac
 {
+
     let tekerlek: Int8 = 4; // let ile tanımlananlar constant oluyor sonradan değiştirilemiyor.
     var hiz: Int = 0;
     var tip: arabaTipiEnum = .DortXDort;
@@ -58,8 +66,50 @@ class Araba
         return true;
     }
 
+    func git3(myHiz hiz: Int, myTip tip: arabaTipiEnum) -> Bool
+    {
+        self.hiz = hiz;
+        self.tip = tip;
+
+        return true;
+    }
+
+    func git4(hiz: inout Int) -> Void {
+        hiz = 50;
+        /* 
+         "inout" komutu C# daki ref/out gibi fonksiyona gönderdiğimiz parametre fonksiyon içerisinde değiştirildiğinde
+         fonksiyonun çağırıldığı yerdeki değişkenin değeri de değişir.
+         */
+    }
+
     // git1(30, .DortXDort);
     // git2(hiz: 30, tip: .DortXDort);
+    // git3(myHiz: 30, myTip: .DortXDort);
+    // var myHiz = 30; git4(hiz: &myHiz);
+
+    func deneme1(sayi1: Int) -> Int {
+
+        let _ = git1(2, .DortXDort); // fonksiyonun dönen değerine ihtiyacımız olmadığı durumlarda _ kullanırız.
+
+        let _ = deneme2({ (a: Int, b: Int) -> Int in
+            return a + b;
+        });
+        return 0;
+    }
+    
+    func deneme2(_ uzakFunc: (Int, Int) -> Int) -> Int
+    {
+        return uzakFunc(3, 5);
+    }
+    
+    /* function tanımlamanın farklı bir hali "in" kullanarak ör; https://stackoverflow.com/a/30379166 bu yöntemin adı "Closure Expression"
+   
+    deneme2({ (a: Int, b: Int) -> Int in
+        return a + b;
+    });
+     
+    */
+    
 }
 
 
