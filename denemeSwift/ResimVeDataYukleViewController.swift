@@ -20,7 +20,7 @@ class ResimVeDataYukleViewController: UIViewController
 
     @IBOutlet weak var imgActivityIndicator: UIActivityIndicatorView!
 
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -64,7 +64,7 @@ class ResimVeDataYukleViewController: UIViewController
         /***************/
 
 
-        Alamofire.download("http://lorempixel.com/400/200/", to: destination).responseData { response in
+        Alamofire.download("http://lorempixel.com/400/200/", to: destination).responseData(completionHandler: { response in
             if let ali = response.result.value
                 {
                 sleep(1) // activity-indicator görünsün diye 1 saniye bekletiyoruz
@@ -74,7 +74,8 @@ class ResimVeDataYukleViewController: UIViewController
 
                 }
             }
-        }
+        });
+
 
 
         Alamofire.download("http://lorempixel.com/400/200/", to: destination).responseData { response in
@@ -101,3 +102,20 @@ class ResimVeDataYukleViewController: UIViewController
 
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

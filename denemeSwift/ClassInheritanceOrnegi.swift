@@ -96,12 +96,12 @@ class Araba: IArac
         });
         return 0;
     }
-    
+
     func deneme2(_ uzakFunc: (Int, Int) -> Int) -> Int
     {
         return uzakFunc(3, 5);
     }
-    
+
     /* function tanımlamanın farklı bir hali "in" kullanarak ör; https://stackoverflow.com/a/30379166 bu yöntemin adı "Closure Expression"
    
     deneme2({ (a: Int, b: Int) -> Int in
@@ -109,7 +109,21 @@ class Araba: IArac
     });
      
     */
+
+    @discardableResult
+    func deneme3(_ sayi1: Int, _ sayi2: Int) -> Int
+    {
+        return sayi1 * sayi2;
+    }
     
+    /*
+     @discardableResult
+     normalde fonksiyon bir değer döndürüyorsa mutlaka onu kod içerisinde yakalamamız lazım yoksa uyarı alırız.
+     let _ = deneme3(47, 3);
+     eğer bunu engellemek istiyorsak fonksiyonu tanımladığımız yerin başına @discardableResult yazmalıyız.
+     deneme3(47, 3);
+     */
+
 }
 
 

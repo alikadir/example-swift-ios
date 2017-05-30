@@ -7,5 +7,6 @@ target 'denemeSwift' do
 
     pod 'Alamofire', '~> 4.4'
     pod 'AlamofireImage', '~> 3.1'
+    pod 'SwiftyJSON'
 
 end

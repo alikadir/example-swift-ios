@@ -79,6 +79,14 @@
                                     <segue destination="YIa-Y3-JVH" kind="show" id="o6c-Ty-S2G"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6h-UO-aH3">
+                                <rect key="frame" x="29" y="243" width="106" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DownloadJson"/>
+                                <connections>
+                                    <segue destination="XI8-rp-pWL" kind="show" id="fUh-HT-9f7"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -168,6 +176,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izP-tE-FUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1732" y="55"/>
+        </scene>
+        <!--Download JSON-->
+        <scene sceneID="8Zp-or-42Z">
+            <objects>
+                <viewController id="XI8-rp-pWL" customClass="DownloadJsonViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NLN-AB-j20"/>
+                        <viewControllerLayoutGuide type="bottom" id="bqH-vo-lpw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Bx-Sj-JV0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HON-WY-RrJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HON-WY-RrJ" firstAttribute="top" secondItem="NLN-AB-j20" secondAttribute="bottom" id="Dtt-Zc-lSE"/>
+                            <constraint firstItem="bqH-vo-lpw" firstAttribute="top" secondItem="HON-WY-RrJ" secondAttribute="bottom" id="JvH-3v-Tq0"/>
+                            <constraint firstAttribute="trailing" secondItem="HON-WY-RrJ" secondAttribute="trailing" id="pCP-x0-wE5"/>
+                            <constraint firstItem="HON-WY-RrJ" firstAttribute="leading" secondItem="9Bx-Sj-JV0" secondAttribute="leading" id="ze4-T9-jNa"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Download JSON" id="6OI-1x-2Xd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ziu-s0-mX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-713" y="852"/>
         </scene>
         <!--Resim Ve Data-->
         <scene sceneID="jhK-dU-XZy">
