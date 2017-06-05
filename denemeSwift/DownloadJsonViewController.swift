@@ -80,7 +80,7 @@ class DownloadJsonViewController: UIViewController
 
 
 
-        Alamofire.request("http://c-xml.yenisafak.com/json/GetNewsList?id=2534448&page=0&take=150").responseJSON
+        Alamofire.request("http://c-xml.yenisafak.com/json/GetNewsList?id=2534448&page=0&take=200").responseJSON
         { response in
             if let data = response.result.value
                 {

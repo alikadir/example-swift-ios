@@ -12,6 +12,7 @@
 		811771BD1EE52C3200A1A3C8 /* MyTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811771BB1EE52C3200A1A3C8 /* MyTableViewCell2.swift */; };
 		811771BE1EE52C3200A1A3C8 /* MyTableViewCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811771BC1EE52C3200A1A3C8 /* MyTableViewCell2.xib */; };
 		811771C01EE53EF700A1A3C8 /* UIImageViewExtesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811771BF1EE53EF700A1A3C8 /* UIImageViewExtesion.swift */; };
+		811771DB1EE5BA1E00A1A3C8 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811771DA1EE5BA1E00A1A3C8 /* StringExtension.swift */; };
 		811E090B1EDDA98C003B1B16 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E090A1EDDA98C003B1B16 /* UIColorExtension.swift */; };
 		811E090D1EDEF771003B1B16 /* NewsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E090C1EDEF771003B1B16 /* NewsDTO.swift */; };
 		811E09101EDEF7D2003B1B16 /* OldNewsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E090F1EDEF7D2003B1B16 /* OldNewsDTO.swift */; };
@@ -47,6 +48,7 @@
 		811771BB1EE52C3200A1A3C8 /* MyTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell2.swift; sourceTree = "<group>"; };
 		811771BC1EE52C3200A1A3C8 /* MyTableViewCell2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell2.xib; sourceTree = "<group>"; };
 		811771BF1EE53EF700A1A3C8 /* UIImageViewExtesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtesion.swift; sourceTree = "<group>"; };
+		811771DA1EE5BA1E00A1A3C8 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		811E090A1EDDA98C003B1B16 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		811E090C1EDEF771003B1B16 /* NewsDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDTO.swift; sourceTree = "<group>"; };
 		811E090F1EDEF7D2003B1B16 /* OldNewsDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldNewsDTO.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				811E090A1EDDA98C003B1B16 /* UIColorExtension.swift */,
 				811771BF1EE53EF700A1A3C8 /* UIImageViewExtesion.swift */,
+				811771DA1EE5BA1E00A1A3C8 /* StringExtension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -355,6 +358,7 @@
 				817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */,
 				81BA5F9E1ED2E3130029724A /* AnaSayfaViewController.swift in Sources */,
 				811771B61EE15FD400A1A3C8 /* OldNewsDataSource.swift in Sources */,
+				811771DB1EE5BA1E00A1A3C8 /* StringExtension.swift in Sources */,
 				81D93CA11ED491D10061014E /* ResimVeDataYukleViewController.swift in Sources */,
 				81BA5FD81ED309C20029724A /* ClassInheritanceOrnegi.swift in Sources */,
 				811E090B1EDDA98C003B1B16 /* UIColorExtension.swift in Sources */,

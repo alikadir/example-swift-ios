@@ -16,8 +16,6 @@ class OldNewsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        print("cell for row at index path");
-
         if(indexPath.row == 4)
         {
 
@@ -56,7 +54,7 @@ class OldNewsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
 
         
-        print(scrollView.contentOffset.y);
+       
         if(scrollView.contentOffset.y < -100)
         {
             if (scrollView is UITableView)
@@ -64,7 +62,7 @@ class OldNewsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
                 
                 let tv = (scrollView as! UITableView);
                 let rc = (tv.subviews.first(where: {$0 is UIRefreshControl}) as! UIRefreshControl)
-                rc.attributedTitle = NSAttributedString(string: "şimdi goool!");
+                rc.attributedTitle = NSAttributedString(string: "şimdi goool!", attributes: [NSForegroundColorAttributeName: UIColor(hex: "#DFD1C3")]);
                 rc.backgroundColor = UIColor(hex: "#A5A09C");
                
                 
