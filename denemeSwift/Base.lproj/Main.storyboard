@@ -180,7 +180,7 @@
         <!--Download JSON-->
         <scene sceneID="8Zp-or-42Z">
             <objects>
-                <viewController id="XI8-rp-pWL" customClass="DownloadJsonViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="XI8-rp-pWL" customClass="DownloadJsonViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NLN-AB-j20"/>
                         <viewControllerLayoutGuide type="bottom" id="bqH-vo-lpw"/>
@@ -189,24 +189,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HON-WY-RrJ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HON-WY-RrJ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <sections/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sectionHeaderHeight">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fNZ-CA-WUd">
+                                <rect key="frame" x="150" y="296" width="75" height="75"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="OxD-OJ-YDE">
+                                        <rect key="frame" x="27" y="27.5" width="20" height="20"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="yükleniyor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OTu-VK-nTO">
+                                        <rect key="frame" x="0.0" y="53" width="75" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="OTu-VK-nTO" firstAttribute="leading" secondItem="fNZ-CA-WUd" secondAttribute="leading" id="Bb4-gL-7Ds"/>
+                                    <constraint firstAttribute="bottom" secondItem="OTu-VK-nTO" secondAttribute="bottom" constant="10" id="MoB-bX-mGy"/>
+                                    <constraint firstAttribute="height" constant="75" id="TYu-ST-hdj"/>
+                                    <constraint firstItem="OxD-OJ-YDE" firstAttribute="centerX" secondItem="fNZ-CA-WUd" secondAttribute="centerX" id="Y0L-XN-Yey"/>
+                                    <constraint firstAttribute="trailing" secondItem="OTu-VK-nTO" secondAttribute="trailing" id="mi3-vf-3Hm"/>
+                                    <constraint firstItem="OxD-OJ-YDE" firstAttribute="centerY" secondItem="fNZ-CA-WUd" secondAttribute="centerY" id="y7C-Te-4gt"/>
+                                    <constraint firstAttribute="width" constant="75" id="yLG-CH-O7o"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="HON-WY-RrJ" firstAttribute="top" secondItem="NLN-AB-j20" secondAttribute="bottom" id="Dtt-Zc-lSE"/>
-                            <constraint firstItem="bqH-vo-lpw" firstAttribute="top" secondItem="HON-WY-RrJ" secondAttribute="bottom" id="JvH-3v-Tq0"/>
-                            <constraint firstAttribute="trailing" secondItem="HON-WY-RrJ" secondAttribute="trailing" id="pCP-x0-wE5"/>
-                            <constraint firstItem="HON-WY-RrJ" firstAttribute="leading" secondItem="9Bx-Sj-JV0" secondAttribute="leading" id="ze4-T9-jNa"/>
+                            <constraint firstItem="bqH-vo-lpw" firstAttribute="top" secondItem="HON-WY-RrJ" secondAttribute="bottom" id="BJp-Ew-u1n"/>
+                            <constraint firstItem="HON-WY-RrJ" firstAttribute="leading" secondItem="9Bx-Sj-JV0" secondAttribute="leading" id="FC5-nP-bue"/>
+                            <constraint firstAttribute="trailing" secondItem="HON-WY-RrJ" secondAttribute="trailing" id="PWq-03-ptj"/>
+                            <constraint firstItem="HON-WY-RrJ" firstAttribute="top" secondItem="NLN-AB-j20" secondAttribute="bottom" id="VjY-qU-DiK"/>
+                            <constraint firstItem="fNZ-CA-WUd" firstAttribute="centerX" secondItem="9Bx-Sj-JV0" secondAttribute="centerX" id="asF-Oy-1iR"/>
+                            <constraint firstItem="fNZ-CA-WUd" firstAttribute="centerY" secondItem="9Bx-Sj-JV0" secondAttribute="centerY" id="cdt-LI-hwM"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Download JSON" id="6OI-1x-2Xd"/>
+                    <connections>
+                        <outlet property="MyLoadingView" destination="fNZ-CA-WUd" id="PGl-Bt-8H7"/>
+                        <outlet property="MyTableView" destination="HON-WY-RrJ" id="41q-az-npg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ziu-s0-mX3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-713" y="852"/>
+            <point key="canvasLocation" x="-714.39999999999998" y="851.42428785607206"/>
         </scene>
         <!--Resim Ve Data-->
         <scene sceneID="jhK-dU-XZy">

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MyTableViewCell2" customModule="denemeSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" stepValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="3uA-Uq-mqq">
+                        <rect key="frame" x="18" y="8" width="94" height="29"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="1" green="0.034711265130000002" blue="0.077818487470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.99678040759999997" green="1" blue="0.1067841645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="StepperValueChange:" destination="KGk-i7-Jjw" eventType="valueChanged" id="gle-Nv-UPl"/>
+                        </connections>
+                    </stepper>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="U6G-og-C24">
+                        <rect key="frame" x="145" y="21" width="150" height="2"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="progressTintColor" red="0.50994682418715298" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </progressView>
+                </subviews>
+                <color key="backgroundColor" red="1" green="0.034711265130000002" blue="0.077818487470000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="MyProgress" destination="U6G-og-C24" id="fxY-Fl-Pcr"/>
+                <outlet property="MyStepper" destination="3uA-Uq-mqq" id="r4b-iu-BqQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

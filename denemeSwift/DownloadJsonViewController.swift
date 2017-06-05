@@ -11,77 +11,113 @@ import UIKit
 import Alamofire
 import SwiftyJSON;
 
+
 class DownloadJsonViewController: UIViewController
 {
+
+    @IBOutlet weak var MyTableView: UITableView!
+
+    @IBOutlet weak var MyLoadingView: UIView!
+
+    var ds = OldNewsDataSource();
+
+    var rc: UIRefreshControl?;
+
     override func viewDidLoad() {
         super.viewDidLoad();
-        DownloadData();
+        //DownloadData();
+        OldDownloadData();
+
+
+        /****************
+        TableView Config
+        *****************/
+        MyTableView.register(UINib(nibName: "MyTableViewCell1", bundle: nil), forCellReuseIdentifier: "cell1");
+        MyTableView.register(UINib(nibName: "MyTableViewCell2", bundle: nil), forCellReuseIdentifier: "cell2");
+
+
+        if #available(iOS 10.0, *) {
+            self.rc = UIRefreshControl();
+            self.rc?.tintColor = UIColor(hex: "#AAAB73");
+            self.rc?.backgroundColor = UIColor(hex: "#A5A09C");
+            self.rc?.attributedTitle = NSAttributedString(string: "Yenile :)", attributes: [NSForegroundColorAttributeName: UIColor(hex: "#DFD1C3")]);
+            self.rc?.addTarget(self, action: #selector(self.OldDownloadData), for: .valueChanged);
+            self.MyTableView.addSubview(self.rc!);
+        }
+
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning();
-    }
-    
-    
+
     func DownloadData()
     {
         Alamofire.request("http://spor.api.piri.net/api/v1/Headline/GetHeadlines").responseJSON
         { response in
             if let data = response.result.value
-            {
-            
+                {
+
                 let jsonData = JSON(data);
-                
+
                 for row in jsonData["headlinesB"].arrayValue
                 {
-                   
-                    let child = News(row);
-                   
+
+                    let child = NewsDTO(row);
+
+                    print(child.title);
+                    print(child.date!);
+                    print(child.shareUrl);
+                    print(child.image);
+                    print(child.randomColor);
+                    print("----------------");
+
+                }
+
+            }
+        }
+    }
+
+    func OldDownloadData()
+    {
+        self.MyLoadingView.alpha = 1;
+
+
+
+        Alamofire.request("http://c-xml.yenisafak.com/json/GetNewsList?id=2534448&page=0&take=150").responseJSON
+        { response in
+            if let data = response.result.value
+                {
+
+                let jsonData = JSON(data);
+
+                for row in jsonData["NewsList"].arrayValue
+                {
+
+                    let child = OldNewsDTO(row);
+
+                    self.ds.MyData.append(child);
+
                     print(child.title);
                     print(child.date);
                     print(child.shareUrl);
                     print(child.image);
-                    
+                    print(child.spot);
                     print("----------------");
-                    
+
                 }
-                
+
+                self.MyTableView.delegate = self.ds;
+                self.MyTableView.dataSource = self.ds;
+                self.MyTableView.reloadData();
+
+                self.MyLoadingView.alpha = 0;
+                self.rc?.endRefreshing();
             }
         }
     }
-    
-    class News
-    {
-        
-        var title:String;
-        var spot: String;
-        var shareUrl: String;
-        var image:String
-        var date:Date;
-        var randomColor: UIColor;
-        
-        init(_ myJSON:JSON)
-        {
-            
-            self.title = myJSON["title"].stringValue;
-            self.spot = myJSON["spot"].stringValue;
-            self.shareUrl = myJSON["shareUrl"].stringValue;
-            self.image = myJSON["media"]["media"].stringValue;
-            
-            // ---- date convert ----
-            let dformat =  DateFormatter();
-            dformat.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ";
-            self.date = dformat.date(from: myJSON["newsDate"].stringValue)!;
 
-            // ---- color convert ----
-            randomColor = UIColor();
-        }
-        
-        
-        
-    }
-    
+
+
 
 }
+
 
 
