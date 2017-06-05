@@ -12,7 +12,7 @@ class OldNewsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
 {
 
     var MyData: [OldNewsDTO] = [];
-
+    //var tv:UITableView?;
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
@@ -25,7 +25,7 @@ class OldNewsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
             return cell;
 
         }
-        else
+            else
         {
 
             let row = MyData[indexPath.row];
@@ -40,6 +40,7 @@ class OldNewsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
 
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //tv = tableView;
         return MyData.count;
     }
 
@@ -52,5 +53,24 @@ class OldNewsDataSource: NSObject, UITableViewDataSource, UITableViewDelegate
         return indexPath.row == 4 ? 100 : 270;
     }
 
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+
+        
+        print(scrollView.contentOffset.y);
+        if(scrollView.contentOffset.y < -100)
+        {
+            if (scrollView is UITableView)
+            {
+                
+                let tv = (scrollView as! UITableView);
+                let rc = (tv.subviews.first(where: {$0 is UIRefreshControl}) as! UIRefreshControl)
+                rc.attributedTitle = NSAttributedString(string: "şimdi goool!");
+                rc.backgroundColor = UIColor(hex: "#A5A09C");
+               
+                
+            }
+            
+        }
+    }
 
 }

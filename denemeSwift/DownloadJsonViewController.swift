@@ -21,7 +21,7 @@ class DownloadJsonViewController: UIViewController
 
     var ds = OldNewsDataSource();
 
-    var rc: UIRefreshControl?;
+    var rc: UIRefreshControl = UIRefreshControl() ;
 
     override func viewDidLoad() {
         super.viewDidLoad();
@@ -37,17 +37,16 @@ class DownloadJsonViewController: UIViewController
 
 
         if #available(iOS 10.0, *) {
-            self.rc = UIRefreshControl();
-            self.rc?.tintColor = UIColor(hex: "#AAAB73");
-            self.rc?.backgroundColor = UIColor(hex: "#A5A09C");
-            self.rc?.attributedTitle = NSAttributedString(string: "Yenile :)", attributes: [NSForegroundColorAttributeName: UIColor(hex: "#DFD1C3")]);
-            self.rc?.addTarget(self, action: #selector(self.OldDownloadData), for: .valueChanged);
-            self.MyTableView.addSubview(self.rc!);
+            self.rc.tintColor = UIColor(hex: "#AAAB73");
+            self.rc.backgroundColor = UIColor(hex: "#A5A09C");
+            self.rc.attributedTitle = NSAttributedString(string: "Yenile :)", attributes: [NSForegroundColorAttributeName: UIColor(hex: "#DFD1C3")]);
+            self.rc.addTarget(self, action: #selector(self.OldDownloadData), for: .valueChanged);
+            self.MyTableView.addSubview(self.rc);
         }
 
     }
 
-
+    
     func DownloadData()
     {
         Alamofire.request("http://spor.api.piri.net/api/v1/Headline/GetHeadlines").responseJSON
@@ -109,7 +108,7 @@ class DownloadJsonViewController: UIViewController
                 self.MyTableView.reloadData();
 
                 self.MyLoadingView.alpha = 0;
-                self.rc?.endRefreshing();
+                self.rc.endRefreshing();
             }
         }
     }
