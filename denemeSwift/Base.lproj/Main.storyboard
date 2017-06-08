@@ -95,6 +95,22 @@
                                     <segue destination="c8K-Lj-BCS" kind="show" id="bi0-mL-vjd"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvP-OB-5oi">
+                                <rect key="frame" x="29" y="318" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="WebViewLocal"/>
+                                <connections>
+                                    <segue destination="5vq-qt-h4a" kind="show" id="l7n-DC-u3a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzW-0Q-6we">
+                                <rect key="frame" x="29" y="356" width="88" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="WebView"/>
+                                <connections>
+                                    <segue destination="oRe-Oe-q4F" kind="show" id="BoR-3F-MS2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -163,6 +179,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CRd-2N-tr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1566" y="883"/>
+        </scene>
+        <!--WebViewLocal-->
+        <scene sceneID="aOp-k9-rTP">
+            <objects>
+                <viewController id="5vq-qt-h4a" customClass="WebViewViewLocalController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ADP-ue-a8Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="VEV-Ee-CEU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fxC-Ko-Rya">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-wW-a4b">
+                                <rect key="frame" x="67" y="91" width="240" height="576"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EZK-wW-a4b" firstAttribute="height" secondItem="fxC-Ko-Rya" secondAttribute="height" id="XBi-xN-zYD"/>
+                            <constraint firstItem="EZK-wW-a4b" firstAttribute="width" secondItem="fxC-Ko-Rya" secondAttribute="width" id="kWx-7r-Osz"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="WebViewLocal" id="82S-pd-8uW"/>
+                    <connections>
+                        <outlet property="MyWebView" destination="EZK-wW-a4b" id="vBt-cP-CoL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="awx-hS-KJV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2302" y="882"/>
+        </scene>
+        <!--WebView-->
+        <scene sceneID="iJ0-ti-uUa">
+            <objects>
+                <viewController id="oRe-Oe-q4F" customClass="WebViewViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oIG-2x-twV"/>
+                        <viewControllerLayoutGuide type="bottom" id="mfn-Md-Qxr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Umz-z5-KAH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVn-P7-iKk">
+                                <rect key="frame" x="59" y="112" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rVn-P7-iKk" firstAttribute="height" secondItem="Umz-z5-KAH" secondAttribute="height" id="Z0v-Hf-Mwz"/>
+                            <constraint firstItem="rVn-P7-iKk" firstAttribute="width" secondItem="Umz-z5-KAH" secondAttribute="width" id="sep-Wo-w0b"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="WebView" id="Kdr-fH-KAf"/>
+                    <connections>
+                        <outlet property="MyWebView" destination="rVn-P7-iKk" id="pDh-SL-uUd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6xb-KR-F9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3023" y="881"/>
         </scene>
         <!--Sayı Arttır-->
         <scene sceneID="atd-LC-LeI">

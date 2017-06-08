@@ -19,6 +19,9 @@
 		811E09131EE038A9003B1B16 /* MyTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E09111EE038A9003B1B16 /* MyTableViewCell1.swift */; };
 		813395E41EE94B7B00EB714E /* DenemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813395E31EE94B7B00EB714E /* DenemeView.swift */; };
 		813395E61EE94B9600EB714E /* DenemeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813395E51EE94B9600EB714E /* DenemeView.xib */; };
+		813395E81EE98A1700EB714E /* WebViewLocalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813395E71EE98A1700EB714E /* WebViewLocalViewController.swift */; };
+		813395EA1EE98DBA00EB714E /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 813395E91EE98DBA00EB714E /* detail.html */; };
+		813395EC1EE99B7700EB714E /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813395EB1EE99B7700EB714E /* WebViewViewController.swift */; };
 		8137EE971EE942E500CAE62F /* XibLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137EE961EE942E500CAE62F /* XibLoadViewController.swift */; };
 		817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */; };
 		817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */; };
@@ -56,6 +59,9 @@
 		811E09111EE038A9003B1B16 /* MyTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell1.swift; sourceTree = "<group>"; };
 		813395E31EE94B7B00EB714E /* DenemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenemeView.swift; sourceTree = "<group>"; };
 		813395E51EE94B9600EB714E /* DenemeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DenemeView.xib; sourceTree = "<group>"; };
+		813395E71EE98A1700EB714E /* WebViewLocalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewLocalViewController.swift; sourceTree = "<group>"; };
+		813395E91EE98DBA00EB714E /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
+		813395EB1EE99B7700EB714E /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		8137EE961EE942E500CAE62F /* XibLoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibLoadViewController.swift; sourceTree = "<group>"; };
 		817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SayiArttirViewController.swift; sourceTree = "<group>"; };
 		817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigasyonParametresiViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +138,8 @@
 				81D93CA01ED491D10061014E /* ResimVeDataYukleViewController.swift */,
 				81E5D4A61EDC022200302810 /* DownloadJsonViewController.swift */,
 				8137EE961EE942E500CAE62F /* XibLoadViewController.swift */,
+				813395E71EE98A1700EB714E /* WebViewLocalViewController.swift */,
+				813395EB1EE99B7700EB714E /* WebViewViewController.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -165,6 +173,7 @@
 				81BA5FD61ED2EC410029724A /* Images */,
 				81BA5F9B1ED2E3130029724A /* AppDelegate.swift */,
 				81BA5F9F1ED2E3130029724A /* Main.storyboard */,
+				813395E91EE98DBA00EB714E /* detail.html */,
 				81BA5FA21ED2E3130029724A /* Assets.xcassets */,
 				81BA5FA41ED2E3130029724A /* LaunchScreen.storyboard */,
 				81BA5FA71ED2E3130029724A /* Info.plist */,
@@ -298,6 +307,7 @@
 				81BA5FA11ED2E3130029724A /* Main.storyboard in Resources */,
 				811771BA1EE1AD5300A1A3C8 /* MyTableViewCell1.xib in Resources */,
 				81BA5FCF1ED2EC300029724A /* 3.jpg in Resources */,
+				813395EA1EE98DBA00EB714E /* detail.html in Resources */,
 				81BA5FCD1ED2EC300029724A /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,6 +369,7 @@
 			files = (
 				817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */,
 				817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */,
+				813395EC1EE99B7700EB714E /* WebViewViewController.swift in Sources */,
 				81BA5F9E1ED2E3130029724A /* AnaSayfaViewController.swift in Sources */,
 				811771B61EE15FD400A1A3C8 /* OldNewsDataSource.swift in Sources */,
 				811771DB1EE5BA1E00A1A3C8 /* StringExtension.swift in Sources */,
@@ -373,6 +384,7 @@
 				811771BD1EE52C3200A1A3C8 /* MyTableViewCell2.swift in Sources */,
 				81E5D4A71EDC022200302810 /* DownloadJsonViewController.swift in Sources */,
 				811E090D1EDEF771003B1B16 /* NewsDTO.swift in Sources */,
+				813395E81EE98A1700EB714E /* WebViewLocalViewController.swift in Sources */,
 				813395E41EE94B7B00EB714E /* DenemeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
