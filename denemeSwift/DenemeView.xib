@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DenemeView" customModule="denemeSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="213"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dynamic Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laV-aX-8Ac">
+                    <rect key="frame" x="94" y="96" width="113" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RWh-uA-f4F">
+                    <rect key="frame" x="10" y="127" width="281" height="2"/>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wt4-Pv-jG4">
+                    <rect key="frame" x="20" y="193.5" width="261" height="19.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                    <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="1" blue="0.83090759280000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Wt4-Pv-jG4" secondAttribute="trailing" constant="20" symbolic="YES" id="8Cq-PE-aoy"/>
+                <constraint firstAttribute="trailing" secondItem="RWh-uA-f4F" secondAttribute="trailing" constant="10" id="FBv-cw-XjK"/>
+                <constraint firstItem="laV-aX-8Ac" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="JhJ-Em-F7E"/>
+                <constraint firstItem="RWh-uA-f4F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="PGX-7X-ArM"/>
+                <constraint firstAttribute="bottom" secondItem="Wt4-Pv-jG4" secondAttribute="bottom" id="Q5p-Ae-pht"/>
+                <constraint firstItem="RWh-uA-f4F" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gaJ-v3-v2y"/>
+                <constraint firstItem="Wt4-Pv-jG4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="qST-Ko-E65"/>
+                <constraint firstItem="laV-aX-8Ac" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="sH9-Al-SXB"/>
+                <constraint firstItem="RWh-uA-f4F" firstAttribute="top" secondItem="laV-aX-8Ac" secondAttribute="bottom" constant="10" id="wBH-VU-Brg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="MyLabel" destination="Wt4-Pv-jG4" id="S03-pz-feX"/>
+                <outlet property="MyProgress" destination="RWh-uA-f4F" id="Waz-zA-BVa"/>
+            </connections>
+            <point key="canvasLocation" x="118.5" y="-182.5"/>
+        </view>
+    </objects>
+</document>

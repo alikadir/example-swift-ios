@@ -17,6 +17,9 @@
 		811E090D1EDEF771003B1B16 /* NewsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E090C1EDEF771003B1B16 /* NewsDTO.swift */; };
 		811E09101EDEF7D2003B1B16 /* OldNewsDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E090F1EDEF7D2003B1B16 /* OldNewsDTO.swift */; };
 		811E09131EE038A9003B1B16 /* MyTableViewCell1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811E09111EE038A9003B1B16 /* MyTableViewCell1.swift */; };
+		813395E41EE94B7B00EB714E /* DenemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813395E31EE94B7B00EB714E /* DenemeView.swift */; };
+		813395E61EE94B9600EB714E /* DenemeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 813395E51EE94B9600EB714E /* DenemeView.xib */; };
+		8137EE971EE942E500CAE62F /* XibLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137EE961EE942E500CAE62F /* XibLoadViewController.swift */; };
 		817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */; };
 		817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */; };
 		81BA5F9C1ED2E3130029724A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5F9B1ED2E3130029724A /* AppDelegate.swift */; };
@@ -37,8 +40,6 @@
 		81BA5FD81ED309C20029724A /* ClassInheritanceOrnegi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5FD71ED309C20029724A /* ClassInheritanceOrnegi.swift */; };
 		81D93CA11ED491D10061014E /* ResimVeDataYukleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93CA01ED491D10061014E /* ResimVeDataYukleViewController.swift */; };
 		81E5D4A71EDC022200302810 /* DownloadJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5D4A61EDC022200302810 /* DownloadJsonViewController.swift */; };
-		81E5D4AA1EDC205900302810 /* Deneme1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E5D4A91EDC205900302810 /* Deneme1.xib */; };
-		81E5D4AC1EDC225000302810 /* Deneme1Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5D4AB1EDC225000302810 /* Deneme1Xib.swift */; };
 		84F98C0DDE581DB0560F3A39 /* Pods_denemeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0840EE8E54DEF3CB465EA20 /* Pods_denemeSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,9 @@
 		811E090C1EDEF771003B1B16 /* NewsDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsDTO.swift; sourceTree = "<group>"; };
 		811E090F1EDEF7D2003B1B16 /* OldNewsDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldNewsDTO.swift; sourceTree = "<group>"; };
 		811E09111EE038A9003B1B16 /* MyTableViewCell1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell1.swift; sourceTree = "<group>"; };
+		813395E31EE94B7B00EB714E /* DenemeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenemeView.swift; sourceTree = "<group>"; };
+		813395E51EE94B9600EB714E /* DenemeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DenemeView.xib; sourceTree = "<group>"; };
+		8137EE961EE942E500CAE62F /* XibLoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibLoadViewController.swift; sourceTree = "<group>"; };
 		817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SayiArttirViewController.swift; sourceTree = "<group>"; };
 		817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigasyonParametresiViewController.swift; sourceTree = "<group>"; };
 		81BA5F981ED2E3130029724A /* denemeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = denemeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,8 +79,6 @@
 		81BA5FD71ED309C20029724A /* ClassInheritanceOrnegi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassInheritanceOrnegi.swift; sourceTree = "<group>"; };
 		81D93CA01ED491D10061014E /* ResimVeDataYukleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResimVeDataYukleViewController.swift; sourceTree = "<group>"; };
 		81E5D4A61EDC022200302810 /* DownloadJsonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadJsonViewController.swift; sourceTree = "<group>"; };
-		81E5D4A91EDC205900302810 /* Deneme1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Deneme1.xib; sourceTree = "<group>"; };
-		81E5D4AB1EDC225000302810 /* Deneme1Xib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deneme1Xib.swift; sourceTree = "<group>"; };
 		86076BB38628654F95359CC8 /* Pods-denemeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-denemeSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-denemeSwift/Pods-denemeSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		A0840EE8E54DEF3CB465EA20 /* Pods_denemeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_denemeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA73AF9A95BD4DB62F68F07E /* Pods-denemeSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-denemeSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-denemeSwift/Pods-denemeSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 				817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */,
 				81D93CA01ED491D10061014E /* ResimVeDataYukleViewController.swift */,
 				81E5D4A61EDC022200302810 /* DownloadJsonViewController.swift */,
+				8137EE961EE942E500CAE62F /* XibLoadViewController.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -190,12 +193,12 @@
 		81E5D4A81EDC203D00302810 /* Xibs */ = {
 			isa = PBXGroup;
 			children = (
-				81E5D4A91EDC205900302810 /* Deneme1.xib */,
-				81E5D4AB1EDC225000302810 /* Deneme1Xib.swift */,
 				811771B81EE1AD5300A1A3C8 /* MyTableViewCell1.xib */,
 				811E09111EE038A9003B1B16 /* MyTableViewCell1.swift */,
 				811771BB1EE52C3200A1A3C8 /* MyTableViewCell2.swift */,
 				811771BC1EE52C3200A1A3C8 /* MyTableViewCell2.xib */,
+				813395E31EE94B7B00EB714E /* DenemeView.swift */,
+				813395E51EE94B9600EB714E /* DenemeView.xib */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -288,12 +291,12 @@
 				81BA5FCE1ED2EC300029724A /* 2.jpg in Resources */,
 				81BA5FCC1ED2EC300029724A /* 0.jpg in Resources */,
 				81BA5FD11ED2EC300029724A /* 5.jpg in Resources */,
+				813395E61EE94B9600EB714E /* DenemeView.xib in Resources */,
 				81BA5FD21ED2EC300029724A /* 6.jpg in Resources */,
 				81BA5FA61ED2E3130029724A /* LaunchScreen.storyboard in Resources */,
 				81BA5FA31ED2E3130029724A /* Assets.xcassets in Resources */,
 				81BA5FA11ED2E3130029724A /* Main.storyboard in Resources */,
 				811771BA1EE1AD5300A1A3C8 /* MyTableViewCell1.xib in Resources */,
-				81E5D4AA1EDC205900302810 /* Deneme1.xib in Resources */,
 				81BA5FCF1ED2EC300029724A /* 3.jpg in Resources */,
 				81BA5FCD1ED2EC300029724A /* 1.jpg in Resources */,
 			);
@@ -363,13 +366,14 @@
 				81BA5FD81ED309C20029724A /* ClassInheritanceOrnegi.swift in Sources */,
 				811E090B1EDDA98C003B1B16 /* UIColorExtension.swift in Sources */,
 				811E09101EDEF7D2003B1B16 /* OldNewsDTO.swift in Sources */,
+				8137EE971EE942E500CAE62F /* XibLoadViewController.swift in Sources */,
 				811E09131EE038A9003B1B16 /* MyTableViewCell1.swift in Sources */,
 				81BA5F9C1ED2E3130029724A /* AppDelegate.swift in Sources */,
 				811771C01EE53EF700A1A3C8 /* UIImageViewExtesion.swift in Sources */,
 				811771BD1EE52C3200A1A3C8 /* MyTableViewCell2.swift in Sources */,
 				81E5D4A71EDC022200302810 /* DownloadJsonViewController.swift in Sources */,
 				811E090D1EDEF771003B1B16 /* NewsDTO.swift in Sources */,
-				81E5D4AC1EDC225000302810 /* Deneme1Xib.swift in Sources */,
+				813395E41EE94B7B00EB714E /* DenemeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
