@@ -23,8 +23,10 @@
 		813395EA1EE98DBA00EB714E /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 813395E91EE98DBA00EB714E /* detail.html */; };
 		813395EC1EE99B7700EB714E /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813395EB1EE99B7700EB714E /* WebViewViewController.swift */; };
 		8137EE971EE942E500CAE62F /* XibLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137EE961EE942E500CAE62F /* XibLoadViewController.swift */; };
+		81675FC31EEABB89005E0014 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81675FC21EEABB89005E0014 /* DBViewController.swift */; };
 		817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */; };
 		817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */; };
+		8196C6C51EEAE52400CF53F0 /* SQLiteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8196C6C41EEAE52400CF53F0 /* SQLiteHelper.swift */; };
 		81BA5F9C1ED2E3130029724A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5F9B1ED2E3130029724A /* AppDelegate.swift */; };
 		81BA5F9E1ED2E3130029724A /* AnaSayfaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5F9D1ED2E3130029724A /* AnaSayfaViewController.swift */; };
 		81BA5FA11ED2E3130029724A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81BA5F9F1ED2E3130029724A /* Main.storyboard */; };
@@ -63,8 +65,10 @@
 		813395E91EE98DBA00EB714E /* detail.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = detail.html; sourceTree = "<group>"; };
 		813395EB1EE99B7700EB714E /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		8137EE961EE942E500CAE62F /* XibLoadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibLoadViewController.swift; sourceTree = "<group>"; };
+		81675FC21EEABB89005E0014 /* DBViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBViewController.swift; sourceTree = "<group>"; };
 		817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SayiArttirViewController.swift; sourceTree = "<group>"; };
 		817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigasyonParametresiViewController.swift; sourceTree = "<group>"; };
+		8196C6C41EEAE52400CF53F0 /* SQLiteHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteHelper.swift; sourceTree = "<group>"; };
 		81BA5F981ED2E3130029724A /* denemeSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = denemeSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81BA5F9B1ED2E3130029724A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81BA5F9D1ED2E3130029724A /* AnaSayfaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnaSayfaViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				811771B51EE15FD400A1A3C8 /* OldNewsDataSource.swift */,
+				8196C6C41EEAE52400CF53F0 /* SQLiteHelper.swift */,
 			);
 			name = DataSources;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 				8137EE961EE942E500CAE62F /* XibLoadViewController.swift */,
 				813395E71EE98A1700EB714E /* WebViewLocalViewController.swift */,
 				813395EB1EE99B7700EB714E /* WebViewViewController.swift */,
+				81675FC21EEABB89005E0014 /* DBViewController.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -367,11 +373,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81675FC31EEABB89005E0014 /* DBViewController.swift in Sources */,
 				817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */,
 				817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */,
 				813395EC1EE99B7700EB714E /* WebViewViewController.swift in Sources */,
 				81BA5F9E1ED2E3130029724A /* AnaSayfaViewController.swift in Sources */,
 				811771B61EE15FD400A1A3C8 /* OldNewsDataSource.swift in Sources */,
+				8196C6C51EEAE52400CF53F0 /* SQLiteHelper.swift in Sources */,
 				811771DB1EE5BA1E00A1A3C8 /* StringExtension.swift in Sources */,
 				81D93CA11ED491D10061014E /* ResimVeDataYukleViewController.swift in Sources */,
 				81BA5FD81ED309C20029724A /* ClassInheritanceOrnegi.swift in Sources */,

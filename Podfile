@@ -5,10 +5,11 @@ target 'denemeSwift' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-    pod 'Alamofire', '~> 4.4'
-    pod 'AlamofireImage', '~> 3.1'
+    pod 'Alamofire'
+    pod 'AlamofireImage'
     pod 'SwiftyJSON'
     pod 'SDWebImage'
-   
+    pod 'RealmSwift'
+    pod 'SQLite.swift'
 
 end

@@ -111,6 +111,14 @@
                                     <segue destination="oRe-Oe-q4F" kind="show" id="BoR-3F-MS2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJ6-9i-A6e">
+                                <rect key="frame" x="29" y="394" width="81" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="DB"/>
+                                <connections>
+                                    <segue destination="0LJ-6e-f5m" kind="show" id="IKe-eI-i8N"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -192,16 +200,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-wW-a4b">
-                                <rect key="frame" x="67" y="91" width="240" height="576"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EZK-wW-a4b">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="EZK-wW-a4b" firstAttribute="height" secondItem="fxC-Ko-Rya" secondAttribute="height" id="XBi-xN-zYD"/>
-                            <constraint firstItem="EZK-wW-a4b" firstAttribute="width" secondItem="fxC-Ko-Rya" secondAttribute="width" id="kWx-7r-Osz"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="WebViewLocal" id="82S-pd-8uW"/>
                     <connections>
@@ -224,16 +229,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <webView contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVn-P7-iKk">
-                                <rect key="frame" x="59" y="112" width="240" height="128"/>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVn-P7-iKk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="rVn-P7-iKk" firstAttribute="height" secondItem="Umz-z5-KAH" secondAttribute="height" id="Z0v-Hf-Mwz"/>
-                            <constraint firstItem="rVn-P7-iKk" firstAttribute="width" secondItem="Umz-z5-KAH" secondAttribute="width" id="sep-Wo-w0b"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="WebView" id="Kdr-fH-KAf"/>
                     <connections>
@@ -243,6 +245,75 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6xb-KR-F9u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3023" y="881"/>
+        </scene>
+        <!--DB-->
+        <scene sceneID="cYU-S8-zIg">
+            <objects>
+                <viewController id="0LJ-6e-f5m" customClass="DBViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TAx-OZ-5lO"/>
+                        <viewControllerLayoutGuide type="bottom" id="LJS-ZY-wAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wxk-UI-B3v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Net-Fs-mnb">
+                                <rect key="frame" x="0.0" y="65" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell1" textLabel="vuy-op-qKK" detailTextLabel="o35-2X-hcn" style="IBUITableViewCellStyleSubtitle" id="7sL-qr-LPA">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7sL-qr-LPA" id="sf5-7J-UVv">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vuy-op-qKK">
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o35-2X-hcn">
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="sectionHeaderHeight">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="0LJ-6e-f5m" id="Ktv-4f-SHQ"/>
+                                    <outlet property="delegate" destination="0LJ-6e-f5m" id="oR4-jM-Feq"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Net-Fs-mnb" firstAttribute="top" secondItem="wxk-UI-B3v" secondAttribute="top" constant="65" id="2KU-M9-tKC"/>
+                            <constraint firstItem="Net-Fs-mnb" firstAttribute="leading" secondItem="wxk-UI-B3v" secondAttribute="leading" id="CVM-Nr-qTk"/>
+                            <constraint firstItem="Net-Fs-mnb" firstAttribute="height" secondItem="wxk-UI-B3v" secondAttribute="height" id="u0u-zd-VIt"/>
+                            <constraint firstItem="Net-Fs-mnb" firstAttribute="width" secondItem="wxk-UI-B3v" secondAttribute="width" id="unG-yj-XWo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="DB" id="3Z9-q7-PhZ"/>
+                    <connections>
+                        <outlet property="MyTableView" destination="Net-Fs-mnb" id="0hF-5t-iYf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1fc-6A-ZXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3700" y="886.50674662668678"/>
         </scene>
         <!--Sayı Arttır-->
         <scene sceneID="atd-LC-LeI">
