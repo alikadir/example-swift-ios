@@ -44,6 +44,9 @@
 		81BA5FD51ED2EC300029724A /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 81BA5FCB1ED2EC300029724A /* 9.jpg */; };
 		81BA5FD81ED309C20029724A /* ClassInheritanceOrnegi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BA5FD71ED309C20029724A /* ClassInheritanceOrnegi.swift */; };
 		81D93CA11ED491D10061014E /* ResimVeDataYukleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81D93CA01ED491D10061014E /* ResimVeDataYukleViewController.swift */; };
+		81E599D21EEFCEE200E29B19 /* FileReadWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E599D11EEFCEE200E29B19 /* FileReadWriteViewController.swift */; };
+		81E599D41EF00EF700E29B19 /* KayitEkleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81E599D31EF00EF700E29B19 /* KayitEkleView.xib */; };
+		81E599D61EF00F1000E29B19 /* KayitEkleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E599D51EF00F1000E29B19 /* KayitEkleView.swift */; };
 		81E5D4A71EDC022200302810 /* DownloadJsonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E5D4A61EDC022200302810 /* DownloadJsonViewController.swift */; };
 		84F98C0DDE581DB0560F3A39 /* Pods_denemeSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0840EE8E54DEF3CB465EA20 /* Pods_denemeSwift.framework */; };
 /* End PBXBuildFile section */
@@ -88,6 +91,9 @@
 		81BA5FCB1ED2EC300029724A /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		81BA5FD71ED309C20029724A /* ClassInheritanceOrnegi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassInheritanceOrnegi.swift; sourceTree = "<group>"; };
 		81D93CA01ED491D10061014E /* ResimVeDataYukleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResimVeDataYukleViewController.swift; sourceTree = "<group>"; };
+		81E599D11EEFCEE200E29B19 /* FileReadWriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileReadWriteViewController.swift; sourceTree = "<group>"; };
+		81E599D31EF00EF700E29B19 /* KayitEkleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KayitEkleView.xib; sourceTree = "<group>"; };
+		81E599D51EF00F1000E29B19 /* KayitEkleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KayitEkleView.swift; sourceTree = "<group>"; };
 		81E5D4A61EDC022200302810 /* DownloadJsonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownloadJsonViewController.swift; sourceTree = "<group>"; };
 		86076BB38628654F95359CC8 /* Pods-denemeSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-denemeSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-denemeSwift/Pods-denemeSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		A0840EE8E54DEF3CB465EA20 /* Pods_denemeSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_denemeSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +152,7 @@
 				813395E71EE98A1700EB714E /* WebViewLocalViewController.swift */,
 				813395EB1EE99B7700EB714E /* WebViewViewController.swift */,
 				81675FC21EEABB89005E0014 /* DBViewController.swift */,
+				81E599D11EEFCEE200E29B19 /* FileReadWriteViewController.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -214,6 +221,8 @@
 				811771BC1EE52C3200A1A3C8 /* MyTableViewCell2.xib */,
 				813395E31EE94B7B00EB714E /* DenemeView.swift */,
 				813395E51EE94B9600EB714E /* DenemeView.xib */,
+				81E599D31EF00EF700E29B19 /* KayitEkleView.xib */,
+				81E599D51EF00F1000E29B19 /* KayitEkleView.swift */,
 			);
 			name = Xibs;
 			sourceTree = "<group>";
@@ -311,6 +320,7 @@
 				81BA5FA61ED2E3130029724A /* LaunchScreen.storyboard in Resources */,
 				81BA5FA31ED2E3130029724A /* Assets.xcassets in Resources */,
 				81BA5FA11ED2E3130029724A /* Main.storyboard in Resources */,
+				81E599D41EF00EF700E29B19 /* KayitEkleView.xib in Resources */,
 				811771BA1EE1AD5300A1A3C8 /* MyTableViewCell1.xib in Resources */,
 				81BA5FCF1ED2EC300029724A /* 3.jpg in Resources */,
 				813395EA1EE98DBA00EB714E /* detail.html in Resources */,
@@ -381,6 +391,7 @@
 				811771B61EE15FD400A1A3C8 /* OldNewsDataSource.swift in Sources */,
 				8196C6C51EEAE52400CF53F0 /* SQLiteHelper.swift in Sources */,
 				811771DB1EE5BA1E00A1A3C8 /* StringExtension.swift in Sources */,
+				81E599D21EEFCEE200E29B19 /* FileReadWriteViewController.swift in Sources */,
 				81D93CA11ED491D10061014E /* ResimVeDataYukleViewController.swift in Sources */,
 				81BA5FD81ED309C20029724A /* ClassInheritanceOrnegi.swift in Sources */,
 				811E090B1EDDA98C003B1B16 /* UIColorExtension.swift in Sources */,
@@ -393,6 +404,7 @@
 				81E5D4A71EDC022200302810 /* DownloadJsonViewController.swift in Sources */,
 				811E090D1EDEF771003B1B16 /* NewsDTO.swift in Sources */,
 				813395E81EE98A1700EB714E /* WebViewLocalViewController.swift in Sources */,
+				81E599D61EF00F1000E29B19 /* KayitEkleView.swift in Sources */,
 				813395E41EE94B7B00EB714E /* DenemeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

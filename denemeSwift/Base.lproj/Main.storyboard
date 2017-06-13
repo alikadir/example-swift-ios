@@ -119,6 +119,14 @@
                                     <segue destination="0LJ-6e-f5m" kind="show" id="IKe-eI-i8N"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSw-a4-wGW">
+                                <rect key="frame" x="29" y="432" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="File Read Write"/>
+                                <connections>
+                                    <segue destination="Zv8-2O-Gqb" kind="show" id="1Ih-Ag-a4U"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -258,8 +266,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Net-Fs-mnb">
-                                <rect key="frame" x="0.0" y="65" width="375" height="667"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" sectionIndexMinimumDisplayRowCount="1" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Net-Fs-mnb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell1" textLabel="vuy-op-qKK" detailTextLabel="o35-2X-hcn" style="IBUITableViewCellStyleSubtitle" id="7sL-qr-LPA">
@@ -285,11 +293,14 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </tableViewCell>
                                 </prototypes>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="sectionHeaderHeight">
-                                        <integer key="value" value="0"/>
+                                        <integer key="value" value="55"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -300,7 +311,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Net-Fs-mnb" firstAttribute="top" secondItem="wxk-UI-B3v" secondAttribute="top" constant="65" id="2KU-M9-tKC"/>
+                            <constraint firstItem="Net-Fs-mnb" firstAttribute="top" secondItem="wxk-UI-B3v" secondAttribute="top" id="2KU-M9-tKC"/>
                             <constraint firstItem="Net-Fs-mnb" firstAttribute="leading" secondItem="wxk-UI-B3v" secondAttribute="leading" id="CVM-Nr-qTk"/>
                             <constraint firstItem="Net-Fs-mnb" firstAttribute="height" secondItem="wxk-UI-B3v" secondAttribute="height" id="u0u-zd-VIt"/>
                             <constraint firstItem="Net-Fs-mnb" firstAttribute="width" secondItem="wxk-UI-B3v" secondAttribute="width" id="unG-yj-XWo"/>
@@ -314,6 +325,66 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1fc-6A-ZXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3700" y="886.50674662668678"/>
+        </scene>
+        <!--File Read Write-->
+        <scene sceneID="Vjt-gp-0tf">
+            <objects>
+                <viewController id="Zv8-2O-Gqb" customClass="FileReadWriteViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Egm-AQ-LZa"/>
+                        <viewControllerLayoutGuide type="bottom" id="yGQ-3k-RyO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cAe-dX-yPP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DIo-ZT-AKl">
+                                <rect key="frame" x="10" y="164" width="355" height="493"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" link="YES" image="YES" keyboardKey="YES" staticText="YES" searchField="YES" header="YES"/>
+                                </accessibility>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p7W-SP-0A1">
+                                <rect key="frame" x="10" y="84" width="355" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6a9-lx-Exx">
+                                <rect key="frame" x="325" y="124" width="30" height="30"/>
+                                <state key="normal" title="Ekle"/>
+                                <connections>
+                                    <action selector="MyButtonClick" destination="Zv8-2O-Gqb" eventType="touchUpInside" id="uFT-sQ-Jf5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p7W-SP-0A1" firstAttribute="leading" secondItem="cAe-dX-yPP" secondAttribute="leading" constant="10" id="5XS-Tg-Zuc"/>
+                            <constraint firstItem="6a9-lx-Exx" firstAttribute="top" secondItem="p7W-SP-0A1" secondAttribute="bottom" constant="10" id="D6n-Gf-IcS"/>
+                            <constraint firstItem="DIo-ZT-AKl" firstAttribute="top" secondItem="6a9-lx-Exx" secondAttribute="bottom" constant="10" id="ErY-0U-7AY"/>
+                            <constraint firstAttribute="trailing" secondItem="DIo-ZT-AKl" secondAttribute="trailing" constant="10" id="MWq-5X-4qL"/>
+                            <constraint firstItem="p7W-SP-0A1" firstAttribute="top" secondItem="Egm-AQ-LZa" secondAttribute="bottom" constant="20" id="RhY-5H-2fR"/>
+                            <constraint firstAttribute="trailing" secondItem="p7W-SP-0A1" secondAttribute="trailing" constant="10" id="TOa-RC-QfZ"/>
+                            <constraint firstAttribute="trailing" secondItem="6a9-lx-Exx" secondAttribute="trailing" constant="20" id="XAa-jf-qSU"/>
+                            <constraint firstItem="DIo-ZT-AKl" firstAttribute="leading" secondItem="cAe-dX-yPP" secondAttribute="leading" constant="10" id="eHa-Gc-bVL"/>
+                            <constraint firstItem="yGQ-3k-RyO" firstAttribute="top" secondItem="DIo-ZT-AKl" secondAttribute="bottom" constant="10" id="tvk-2M-o1u"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="File Read Write" id="B9C-fC-9no"/>
+                    <connections>
+                        <outlet property="MyButton" destination="6a9-lx-Exx" id="wqE-OB-RL5"/>
+                        <outlet property="MyTextBox" destination="p7W-SP-0A1" id="wuA-nd-9sw"/>
+                        <outlet property="MyTextView" destination="DIo-ZT-AKl" id="yGx-Du-YWb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kfo-As-0Vg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4416.8000000000002" y="890.10494752623697"/>
         </scene>
         <!--Sayı Arttır-->
         <scene sceneID="atd-LC-LeI">

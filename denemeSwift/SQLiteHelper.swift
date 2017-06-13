@@ -10,7 +10,9 @@ import Foundation
 import SQLite
 
 class SQLiteHelper {
-    static var sharedInstance = SQLiteHelper()
+    
+    static let sharedInstance = SQLiteHelper();
+    
     var db: Connection?
     
     let Student = Table("Student")
@@ -18,7 +20,7 @@ class SQLiteHelper {
     let Name = Expression<String>("Name")
     
     
-    init() {
+   private init() {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         print(path)
         do{
