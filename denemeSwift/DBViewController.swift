@@ -19,28 +19,16 @@ class DBViewController: UIViewController, UITableViewDataSource, UITableViewDele
         super.viewDidLoad();
 
         self.MyTableView.tableHeaderView = (Bundle.main.loadNibNamed("KayitEkleView", owner: self, options: nil)?.first as! UIView);
-        
-        
         MyTableView.setContentOffset(CGPoint.init(x: 0, y: 40), animated: false);
-        
-        
-        DispatchQueue.main.async {
-            self.MyTableView.tableHeaderView?.frame.size.height = 45;
-            self.MyTableView.reloadData();
-        }
- 
-       
-    }
-    
-  
-    
-/*
-    override func viewDidAppear(_ animated: Bool) {
-        
-        self.MyTableView.tableHeaderView?.frame.size.height = 45;
-    }
- */
 
+        TableViewHeaderHeightRefresh();
+
+    }
+
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        TableViewHeaderHeightRefresh();
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return SQLiteHelper.sharedInstance.getStudentCount();
     }
@@ -57,7 +45,7 @@ class DBViewController: UIViewController, UITableViewDataSource, UITableViewDele
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-/*
+        /*
         let actualPosition = scrollView.contentOffset.y;
         let contentHeight = scrollView.contentSize.height - (MyTableView.frame.size.height);
         if (actualPosition >= contentHeight) {
@@ -65,22 +53,36 @@ class DBViewController: UIViewController, UITableViewDataSource, UITableViewDele
             MyTableView.reloadData();
             sleep(2000);
         }
- */
+        */
     }
 
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-      
+
         let actualPosition = scrollView.contentOffset.y;
         let contentHeight = scrollView.contentSize.height - (MyTableView.frame.size.height);
         if (actualPosition >= contentHeight) {
-       
+
             MyTableView.reloadData();
             print("tableview refresh");
-            
+
         }
-        
+
     }
-    
+
+    func TableViewHeaderHeightRefresh()
+    {
+
+        // saçma ama böyle bir refresh methodu yazmak zorunda kaldım
+
+
+        DispatchQueue.main.async {
+            
+            self.MyTableView.tableHeaderView?.frame.size.height = 45;
+            self.MyTableView.reloadData();
+        
+        }
+    }
+
 
 }
 

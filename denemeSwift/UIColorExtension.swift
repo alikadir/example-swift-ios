@@ -15,4 +15,11 @@ extension UIColor {
                   green: CGFloat(strtoul(String(chars[3...4]), nil, 16)) / 255,
                   blue: CGFloat(strtoul(String(chars[5...6]), nil, 16)) / 255,
                   alpha: alpha) }
+    
+    
+    static var random: UIColor {
+        return UIColor(red: .random(), green: .random(), blue: .random(), alpha: 1.0)
+    }
+    
 }
+
