@@ -71,11 +71,11 @@ class MapViewController: UIViewController, CLLocationManagerDelegate
 
 
         manager.delegate = self;
-        manager.desiredAccuracy = kCLLocationAccuracyBest // istenden doğruluk
+        manager.desiredAccuracy = kCLLocationAccuracyBest // istenen doğruluk
 
         manager.requestWhenInUseAuthorization();
         // manager.requestLocation();
-        manager.startUpdatingLocation();
+        //manager.startUpdatingLocation();
 
     }
 

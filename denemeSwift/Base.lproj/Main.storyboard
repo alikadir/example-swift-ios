@@ -14,7 +14,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t9a-Id-N5g" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Wxf-1U-N3F">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wxf-1U-N3F">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -137,10 +137,18 @@
                                                     <segue destination="4U9-ii-juj" kind="show" id="fh9-5U-DGM"/>
                                                 </connections>
                                             </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ta-gl-5Ko">
+                                                <rect key="frame" x="30" y="749" width="315" height="30"/>
+                                                <state key="normal" title="SuperMap"/>
+                                                <connections>
+                                                    <segue destination="pFq-Lv-kQ4" kind="show" id="nbP-42-Qjm"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="qjZ-Oa-cjY" secondAttribute="trailing" constant="30" id="0QZ-bh-jbq"/>
+                                            <constraint firstItem="3Ta-gl-5Ko" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="1Pn-GS-b5g"/>
                                             <constraint firstItem="qjZ-Oa-cjY" firstAttribute="top" secondItem="Y5i-ZH-sB4" secondAttribute="bottom" constant="30" id="2Ib-jc-pIJ"/>
                                             <constraint firstItem="Y5i-ZH-sB4" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="2cn-3N-NYd"/>
                                             <constraint firstItem="QJ6-9i-A6e" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="3kX-Dx-G5N"/>
@@ -177,6 +185,8 @@
                                             <constraint firstAttribute="trailing" secondItem="xvP-OB-5oi" secondAttribute="trailing" constant="30" id="saN-RJ-5Vp"/>
                                             <constraint firstAttribute="trailing" secondItem="hkr-cP-VF4" secondAttribute="trailing" constant="30" id="tRx-Nu-Gv4"/>
                                             <constraint firstItem="Y5i-ZH-sB4" firstAttribute="top" secondItem="Ccd-if-tiW" secondAttribute="top" constant="30" id="u5k-lg-TAO"/>
+                                            <constraint firstAttribute="trailing" secondItem="3Ta-gl-5Ko" secondAttribute="trailing" constant="30" id="waR-eP-1S9"/>
+                                            <constraint firstItem="3Ta-gl-5Ko" firstAttribute="top" secondItem="iRJ-lu-9wc" secondAttribute="bottom" constant="30" id="zh9-qb-CYe"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -598,6 +608,39 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izP-tE-FUS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2650" y="-812"/>
+        </scene>
+        <!--Super Map-->
+        <scene sceneID="ODb-IW-Mg6">
+            <objects>
+                <viewController id="pFq-Lv-kQ4" customClass="SuperMapViewController" customModule="denemeSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Or-0Q-it3"/>
+                        <viewControllerLayoutGuide type="bottom" id="QO8-Ph-che"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gG8-AD-Cmn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eRj-UT-zZl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="936"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="eRj-UT-zZl" secondAttribute="trailing" id="PTL-eC-lpA"/>
+                            <constraint firstItem="eRj-UT-zZl" firstAttribute="top" secondItem="9Or-0Q-it3" secondAttribute="bottom" id="QpL-NA-1s2"/>
+                            <constraint firstItem="eRj-UT-zZl" firstAttribute="leading" secondItem="gG8-AD-Cmn" secondAttribute="leading" id="ROr-WN-qwX"/>
+                            <constraint firstItem="QO8-Ph-che" firstAttribute="top" secondItem="eRj-UT-zZl" secondAttribute="bottom" id="hc7-dk-dby"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Super Map" id="c4R-Gi-S2c"/>
+                    <connections>
+                        <outlet property="MyMap" destination="eRj-UT-zZl" id="ST1-hY-9Xc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P8j-9v-y4A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3589.5999999999999" y="-830.2848575712145"/>
         </scene>
         <!--Download JSON-->
         <scene sceneID="8Zp-or-42Z">

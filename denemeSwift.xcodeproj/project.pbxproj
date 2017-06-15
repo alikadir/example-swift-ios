@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8100069D1EF26DA100E038A7 /* SuperMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8100069C1EF26DA100E038A7 /* SuperMapViewController.swift */; };
+		810006B11EF2A27400E038A7 /* pin0.png in Resources */ = {isa = PBXBuildFile; fileRef = 810006AC1EF2A27400E038A7 /* pin0.png */; };
+		810006B21EF2A27400E038A7 /* pin1.png in Resources */ = {isa = PBXBuildFile; fileRef = 810006AD1EF2A27400E038A7 /* pin1.png */; };
+		810006B31EF2A27400E038A7 /* pin2.png in Resources */ = {isa = PBXBuildFile; fileRef = 810006AE1EF2A27400E038A7 /* pin2.png */; };
+		810006B41EF2A27400E038A7 /* pin3.png in Resources */ = {isa = PBXBuildFile; fileRef = 810006AF1EF2A27400E038A7 /* pin3.png */; };
+		810006B51EF2A27400E038A7 /* pin4.png in Resources */ = {isa = PBXBuildFile; fileRef = 810006B01EF2A27400E038A7 /* pin4.png */; };
+		810006B71EF2BD4900E038A7 /* user-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 810006B61EF2BD4900E038A7 /* user-pin.png */; };
 		811771B61EE15FD400A1A3C8 /* OldNewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811771B51EE15FD400A1A3C8 /* OldNewsDataSource.swift */; };
 		811771BA1EE1AD5300A1A3C8 /* MyTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811771B81EE1AD5300A1A3C8 /* MyTableViewCell1.xib */; };
 		811771BD1EE52C3200A1A3C8 /* MyTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811771BB1EE52C3200A1A3C8 /* MyTableViewCell2.swift */; };
@@ -55,6 +62,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8100069C1EF26DA100E038A7 /* SuperMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperMapViewController.swift; sourceTree = "<group>"; };
+		810006AC1EF2A27400E038A7 /* pin0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin0.png; sourceTree = "<group>"; };
+		810006AD1EF2A27400E038A7 /* pin1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin1.png; sourceTree = "<group>"; };
+		810006AE1EF2A27400E038A7 /* pin2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin2.png; sourceTree = "<group>"; };
+		810006AF1EF2A27400E038A7 /* pin3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin3.png; sourceTree = "<group>"; };
+		810006B01EF2A27400E038A7 /* pin4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin4.png; sourceTree = "<group>"; };
+		810006B61EF2BD4900E038A7 /* user-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-pin.png"; sourceTree = "<group>"; };
 		811771B51EE15FD400A1A3C8 /* OldNewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldNewsDataSource.swift; sourceTree = "<group>"; };
 		811771B81EE1AD5300A1A3C8 /* MyTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell1.xib; sourceTree = "<group>"; };
 		811771BB1EE52C3200A1A3C8 /* MyTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell2.swift; sourceTree = "<group>"; };
@@ -162,6 +176,7 @@
 				81675FC21EEABB89005E0014 /* DBViewController.swift */,
 				81E599D11EEFCEE200E29B19 /* FileReadWriteViewController.swift */,
 				81E599D91EF149F600E29B19 /* MapViewController.swift */,
+				8100069C1EF26DA100E038A7 /* SuperMapViewController.swift */,
 			);
 			name = Pages;
 			sourceTree = "<group>";
@@ -207,6 +222,12 @@
 		81BA5FD61ED2EC410029724A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				810006B61EF2BD4900E038A7 /* user-pin.png */,
+				810006AC1EF2A27400E038A7 /* pin0.png */,
+				810006AD1EF2A27400E038A7 /* pin1.png */,
+				810006AE1EF2A27400E038A7 /* pin2.png */,
+				810006AF1EF2A27400E038A7 /* pin3.png */,
+				810006B01EF2A27400E038A7 /* pin4.png */,
 				81BA5FC21ED2EC300029724A /* 0.jpg */,
 				81BA5FC31ED2EC300029724A /* 1.jpg */,
 				81BA5FC41ED2EC300029724A /* 2.jpg */,
@@ -319,6 +340,7 @@
 			files = (
 				811771BE1EE52C3200A1A3C8 /* MyTableViewCell2.xib in Resources */,
 				81BA5FD51ED2EC300029724A /* 9.jpg in Resources */,
+				810006B31EF2A27400E038A7 /* pin2.png in Resources */,
 				81BA5FD41ED2EC300029724A /* 8.jpg in Resources */,
 				81BA5FD31ED2EC300029724A /* 7.jpg in Resources */,
 				81BA5FD01ED2EC300029724A /* 4.jpg in Resources */,
@@ -326,12 +348,17 @@
 				81BA5FCC1ED2EC300029724A /* 0.jpg in Resources */,
 				81BA5FD11ED2EC300029724A /* 5.jpg in Resources */,
 				813395E61EE94B9600EB714E /* DenemeView.xib in Resources */,
+				810006B71EF2BD4900E038A7 /* user-pin.png in Resources */,
 				81BA5FD21ED2EC300029724A /* 6.jpg in Resources */,
 				81BA5FA61ED2E3130029724A /* LaunchScreen.storyboard in Resources */,
 				81BA5FA31ED2E3130029724A /* Assets.xcassets in Resources */,
+				810006B51EF2A27400E038A7 /* pin4.png in Resources */,
+				810006B11EF2A27400E038A7 /* pin0.png in Resources */,
+				810006B41EF2A27400E038A7 /* pin3.png in Resources */,
 				81BA5FA11ED2E3130029724A /* Main.storyboard in Resources */,
 				81E599D41EF00EF700E29B19 /* KayitEkleView.xib in Resources */,
 				811771BA1EE1AD5300A1A3C8 /* MyTableViewCell1.xib in Resources */,
+				810006B21EF2A27400E038A7 /* pin1.png in Resources */,
 				81BA5FCF1ED2EC300029724A /* 3.jpg in Resources */,
 				813395EA1EE98DBA00EB714E /* detail.html in Resources */,
 				81BA5FCD1ED2EC300029724A /* 1.jpg in Resources */,
@@ -396,6 +423,7 @@
 				81675FC31EEABB89005E0014 /* DBViewController.swift in Sources */,
 				817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */,
 				817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */,
+				8100069D1EF26DA100E038A7 /* SuperMapViewController.swift in Sources */,
 				813395EC1EE99B7700EB714E /* WebViewViewController.swift in Sources */,
 				81BA5F9E1ED2E3130029724A /* AnaSayfaViewController.swift in Sources */,
 				811771B61EE15FD400A1A3C8 /* OldNewsDataSource.swift in Sources */,
