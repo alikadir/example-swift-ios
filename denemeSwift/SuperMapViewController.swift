@@ -86,9 +86,7 @@ class SuperMapViewController: UIViewController, CLLocationManagerDelegate, MKMap
 
 
         MyMap.addAnnotation(annotation!);
-        
-         
-         */
+        */
  
 
 
@@ -112,10 +110,9 @@ class SuperMapViewController: UIViewController, CLLocationManagerDelegate, MKMap
 
             return UserAnnotationView;
 
-
         }
-            else {
-
+        else {
+            
                 let id = "YenidenKullanmaIDsi";
                 var annotationView = MyMap.dequeueReusableAnnotationView(withIdentifier: id);
                 if(annotationView == nil) {
@@ -126,11 +123,8 @@ class SuperMapViewController: UIViewController, CLLocationManagerDelegate, MKMap
                 }
 
                 return annotationView;
-
+            
         }
-
-
-
     }
 
 }
