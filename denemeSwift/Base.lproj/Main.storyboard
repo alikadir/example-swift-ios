@@ -150,6 +150,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KpM-VB-VCg">
+                                                <rect key="frame" x="30" y="809" width="315" height="30"/>
+                                                <state key="normal" title="Notification"/>
+                                                <connections>
+                                                    <action selector="NotificationClick" destination="jin-8A-OF3" eventType="touchUpInside" id="7qW-rx-70i"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -171,6 +178,7 @@
                                             <constraint firstItem="5s3-Ll-WCk" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="Pbj-hE-JaQ"/>
                                             <constraint firstItem="qjZ-Oa-cjY" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="Q4q-nO-zXv"/>
                                             <constraint firstItem="h6h-UO-aH3" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="RI0-Hc-hi6"/>
+                                            <constraint firstItem="KpM-VB-VCg" firstAttribute="top" secondItem="3Ta-gl-5Ko" secondAttribute="bottom" constant="30" id="RiQ-0z-xFH"/>
                                             <constraint firstItem="GZS-j4-02C" firstAttribute="top" secondItem="Ccd-if-tiW" secondAttribute="top" constant="30" id="SlD-lL-cR2"/>
                                             <constraint firstItem="PzW-0Q-6we" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="Spm-oV-eBO"/>
                                             <constraint firstItem="hSw-a4-wGW" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="TUh-7D-ZQD"/>
@@ -179,12 +187,14 @@
                                             <constraint firstAttribute="trailing" secondItem="mR0-ya-Rf3" secondAttribute="trailing" constant="30" id="WWz-Kh-05b"/>
                                             <constraint firstAttribute="height" constant="1000" id="XSp-Fl-jiU"/>
                                             <constraint firstItem="5s3-Ll-WCk" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="ZME-Zc-7EL"/>
+                                            <constraint firstAttribute="trailing" secondItem="KpM-VB-VCg" secondAttribute="trailing" constant="30" id="Zcu-9E-SC6"/>
                                             <constraint firstItem="xvP-OB-5oi" firstAttribute="top" secondItem="mR0-ya-Rf3" secondAttribute="bottom" constant="30" id="a40-mk-sCB"/>
                                             <constraint firstAttribute="trailing" secondItem="hSw-a4-wGW" secondAttribute="trailing" constant="30" id="aQG-td-hpi"/>
                                             <constraint firstItem="iRJ-lu-9wc" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="b79-p4-Fek"/>
                                             <constraint firstItem="hSw-a4-wGW" firstAttribute="top" secondItem="QJ6-9i-A6e" secondAttribute="bottom" constant="30" id="cPR-vG-p4X"/>
                                             <constraint firstAttribute="trailing" secondItem="h6h-UO-aH3" secondAttribute="trailing" constant="30" id="eIQ-is-yyv"/>
                                             <constraint firstAttribute="trailing" secondItem="PzW-0Q-6we" secondAttribute="trailing" constant="30" id="g2D-9a-Pf3"/>
+                                            <constraint firstItem="KpM-VB-VCg" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="j3U-OK-stB"/>
                                             <constraint firstAttribute="trailing" secondItem="iRJ-lu-9wc" secondAttribute="trailing" constant="30" id="kAh-Y0-tps"/>
                                             <constraint firstItem="iRJ-lu-9wc" firstAttribute="top" secondItem="hSw-a4-wGW" secondAttribute="bottom" constant="30" id="ks6-gK-Q2y"/>
                                             <constraint firstItem="xvP-OB-5oi" firstAttribute="leading" secondItem="Ccd-if-tiW" secondAttribute="leading" constant="30" id="lF1-W2-shn"/>

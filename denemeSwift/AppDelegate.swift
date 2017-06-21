@@ -6,7 +6,8 @@
 //  Copyright © 2017 Ali Kadir BAGCIOGLU. All rights reserved.
 //
 
-import UIKit
+import UIKit;
+import Alamofire;
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,13 +18,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+       
+        application.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge , .sound], categories: nil));
         
         
-        
+        Timer.scheduledTimer(timeInterval: 2.0, target: self, selector: #selector(self.TimerNonStop), userInfo: nil, repeats: true);
         
         
         return true
     }
+    
+    func TimerNonStop()
+    {
+        var request = URLRequest(url: URL(string:"http://apisimulator.pho.fm/location")!);
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        
+        
+        let values = ["06786984572365", "06644857247565", Date().datatypeValue];
+        
+        request.httpBody = try! JSONSerialization.data(withJSONObject: values)
+        
+        Alamofire.request(request)
+    }
+    
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

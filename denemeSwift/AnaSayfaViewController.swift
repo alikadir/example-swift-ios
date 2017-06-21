@@ -13,6 +13,8 @@ class AnaSayfaViewController: UIViewController {
     @IBOutlet weak var GelenParametreTxt: UITextField!
 
     @IBOutlet weak var MyBateryStatus: UILabel!
+    
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +41,20 @@ class AnaSayfaViewController: UIViewController {
         MyBateryStatus.text = "%" + String(format: "%.0f", UIDevice.current.batteryLevel * 100);
     }
 
+    @IBAction func NotificationClick() {
+      
+        // uygulama arka planda iken notifikasyon geliyor.
+        // butona basınca 2 sn içerisinde uygulamayı arka plana at.
+        
+        let note = UILocalNotification();
+        note.applicationIconBadgeNumber = 13;
+        note.alertBody = "Deneme mesaj 123";
+        note.soundName = UILocalNotificationDefaultSoundName;
+        note.fireDate = Date(timeIntervalSinceNow: 2); // 2 sn sonra gönder.
+        
+        UIApplication.shared.scheduleLocalNotification(note);
+       
+    }
 
 
     @IBAction func StatusBarChangeClick() {
