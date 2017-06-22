@@ -13,12 +13,15 @@ class AnaSayfaViewController: UIViewController {
     @IBOutlet weak var GelenParametreTxt: UITextField!
 
     @IBOutlet weak var MyBateryStatus: UILabel!
-    
-   
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // notification yetkisi istiyoruz.
+        UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .badge, .sound], categories: nil));
+
 
 
         // NotificationCenter ile uygulama içi haberleşme sağlanır.
@@ -40,22 +43,42 @@ class AnaSayfaViewController: UIViewController {
     {
         MyBateryStatus.text = "%" + String(format: "%.0f", UIDevice.current.batteryLevel * 100);
     }
+    var abc: LocationHelper?;
+    @IBAction func LocationBackgroundClick() {
+
+        abc = try LocationHelper();
+    }
 
     @IBAction func NotificationClick() {
-      
+
+
         // uygulama arka planda iken notifikasyon geliyor.
         // butona basınca 2 sn içerisinde uygulamayı arka plana at.
-        
+
         let note = UILocalNotification();
         note.applicationIconBadgeNumber = 13;
         note.alertBody = "Deneme mesaj 123";
         note.soundName = UILocalNotificationDefaultSoundName;
         note.fireDate = Date(timeIntervalSinceNow: 2); // 2 sn sonra gönder.
-        
+
         UIApplication.shared.scheduleLocalNotification(note);
-       
+
     }
 
+    @IBAction func AlertClick() {
+
+        let alertController = UIAlertController(title: "Başlık", message: "deneme mesaj metni3", preferredStyle: .alert);
+        let okAction = UIAlertAction(title: "Ok", style: .destructive, handler: { (pAlert) in
+            print("OK click");
+        });
+        let cancelAction = UIAlertAction(title: "Cancel", style: .default, handler: { (pAlert) in
+            print("CANCEL click");
+        });
+        alertController.addAction(okAction);
+        alertController.addAction(cancelAction);
+
+        self.present(alertController, animated: true, completion: nil)
+    }
 
     @IBAction func StatusBarChangeClick() {
 
@@ -77,10 +100,6 @@ class AnaSayfaViewController: UIViewController {
     }
 
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 

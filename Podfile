@@ -11,5 +11,5 @@ target 'denemeSwift' do
     pod 'SDWebImage'
     pod 'RealmSwift'
     pod 'SQLite.swift'
-
+    pod 'SwiftGifOrigin'
 end

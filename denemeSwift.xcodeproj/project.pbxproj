@@ -15,6 +15,8 @@
 		810006B51EF2A27400E038A7 /* pin4.png in Resources */ = {isa = PBXBuildFile; fileRef = 810006B01EF2A27400E038A7 /* pin4.png */; };
 		810006B71EF2BD4900E038A7 /* user-pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 810006B61EF2BD4900E038A7 /* user-pin.png */; };
 		810006B91EFA5BB900E038A7 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810006B81EFA5BB900E038A7 /* DateExtension.swift */; };
+		810006BB1EFBA7B500E038A7 /* Boss.gif in Resources */ = {isa = PBXBuildFile; fileRef = 810006BA1EFBA7B500E038A7 /* Boss.gif */; };
+		810006C01EFBBD7600E038A7 /* LocationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810006BF1EFBBD7600E038A7 /* LocationHelper.swift */; };
 		811771B61EE15FD400A1A3C8 /* OldNewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811771B51EE15FD400A1A3C8 /* OldNewsDataSource.swift */; };
 		811771BA1EE1AD5300A1A3C8 /* MyTableViewCell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 811771B81EE1AD5300A1A3C8 /* MyTableViewCell1.xib */; };
 		811771BD1EE52C3200A1A3C8 /* MyTableViewCell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811771BB1EE52C3200A1A3C8 /* MyTableViewCell2.swift */; };
@@ -31,6 +33,7 @@
 		813395EA1EE98DBA00EB714E /* detail.html in Resources */ = {isa = PBXBuildFile; fileRef = 813395E91EE98DBA00EB714E /* detail.html */; };
 		813395EC1EE99B7700EB714E /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813395EB1EE99B7700EB714E /* WebViewViewController.swift */; };
 		8137EE971EE942E500CAE62F /* XibLoadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8137EE961EE942E500CAE62F /* XibLoadViewController.swift */; };
+		8152C1FC1EFBD1CF008EFAC9 /* Frijole-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 810006C31EFBC8C900E038A7 /* Frijole-Regular.ttf */; };
 		81675FC31EEABB89005E0014 /* DBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81675FC21EEABB89005E0014 /* DBViewController.swift */; };
 		817D25DA1ED331F100DC8AC2 /* SayiArttirViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25D91ED331F100DC8AC2 /* SayiArttirViewController.swift */; };
 		817D25DC1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 817D25DB1ED338DB00DC8AC2 /* NavigasyonParametresiViewController.swift */; };
@@ -71,6 +74,9 @@
 		810006B01EF2A27400E038A7 /* pin4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin4.png; sourceTree = "<group>"; };
 		810006B61EF2BD4900E038A7 /* user-pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user-pin.png"; sourceTree = "<group>"; };
 		810006B81EFA5BB900E038A7 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		810006BA1EFBA7B500E038A7 /* Boss.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Boss.gif; sourceTree = "<group>"; };
+		810006BF1EFBBD7600E038A7 /* LocationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHelper.swift; sourceTree = "<group>"; };
+		810006C31EFBC8C900E038A7 /* Frijole-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Frijole-Regular.ttf"; sourceTree = "<group>"; };
 		811771B51EE15FD400A1A3C8 /* OldNewsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldNewsDataSource.swift; sourceTree = "<group>"; };
 		811771B81EE1AD5300A1A3C8 /* MyTableViewCell1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell1.xib; sourceTree = "<group>"; };
 		811771BB1EE52C3200A1A3C8 /* MyTableViewCell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell2.swift; sourceTree = "<group>"; };
@@ -135,11 +141,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		810006BE1EFBBC5800E038A7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8196C6C41EEAE52400CF53F0 /* SQLiteHelper.swift */,
+				810006BF1EFBBD7600E038A7 /* LocationHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		810006C11EFBC47600E038A7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				810006C31EFBC8C900E038A7 /* Frijole-Regular.ttf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		811771B41EE15FA700A1A3C8 /* DataSources */ = {
 			isa = PBXGroup;
 			children = (
 				811771B51EE15FD400A1A3C8 /* OldNewsDataSource.swift */,
-				8196C6C41EEAE52400CF53F0 /* SQLiteHelper.swift */,
 			);
 			name = DataSources;
 			sourceTree = "<group>";
@@ -205,6 +227,8 @@
 		81BA5F9A1ED2E3130029724A /* denemeSwift */ = {
 			isa = PBXGroup;
 			children = (
+				810006C11EFBC47600E038A7 /* Fonts */,
+				810006BE1EFBBC5800E038A7 /* Helpers */,
 				811771B41EE15FA700A1A3C8 /* DataSources */,
 				811E090E1EDEF795003B1B16 /* DTOs */,
 				811E09091EDDA964003B1B16 /* Extensions */,
@@ -225,6 +249,7 @@
 		81BA5FD61ED2EC410029724A /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				810006BA1EFBA7B500E038A7 /* Boss.gif */,
 				810006B61EF2BD4900E038A7 /* user-pin.png */,
 				810006AC1EF2A27400E038A7 /* pin0.png */,
 				810006AD1EF2A27400E038A7 /* pin1.png */,
@@ -346,6 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8152C1FC1EFBD1CF008EFAC9 /* Frijole-Regular.ttf in Resources */,
 				811771BE1EE52C3200A1A3C8 /* MyTableViewCell2.xib in Resources */,
 				81BA5FD51ED2EC300029724A /* 9.jpg in Resources */,
 				810006B31EF2A27400E038A7 /* pin2.png in Resources */,
@@ -359,6 +385,7 @@
 				810006B71EF2BD4900E038A7 /* user-pin.png in Resources */,
 				81BA5FD21ED2EC300029724A /* 6.jpg in Resources */,
 				81BA5FA61ED2E3130029724A /* LaunchScreen.storyboard in Resources */,
+				810006BB1EFBA7B500E038A7 /* Boss.gif in Resources */,
 				81BA5FA31ED2E3130029724A /* Assets.xcassets in Resources */,
 				810006B51EF2A27400E038A7 /* pin4.png in Resources */,
 				810006B11EF2A27400E038A7 /* pin0.png in Resources */,
@@ -437,6 +464,7 @@
 				811771B61EE15FD400A1A3C8 /* OldNewsDataSource.swift in Sources */,
 				8196C6C51EEAE52400CF53F0 /* SQLiteHelper.swift in Sources */,
 				81E599DA1EF149F600E29B19 /* MapViewController.swift in Sources */,
+				810006C01EFBBD7600E038A7 /* LocationHelper.swift in Sources */,
 				811771DB1EE5BA1E00A1A3C8 /* StringExtension.swift in Sources */,
 				81E599D21EEFCEE200E29B19 /* FileReadWriteViewController.swift in Sources */,
 				81D93CA11ED491D10061014E /* ResimVeDataYukleViewController.swift in Sources */,
