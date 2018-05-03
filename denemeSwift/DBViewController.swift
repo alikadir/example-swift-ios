@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import SQLite
+import SQLite3
 
 
 class DBViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
@@ -38,7 +38,11 @@ class DBViewController: UIViewController, UITableViewDataSource, UITableViewDele
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell1")!;
 
         let row = SQLiteHelper.sharedInstance.getById(id: indexPath.row + 1);
-        cell.textLabel?.text = row?.get(SQLiteHelper.sharedInstance.Name);
+        
+       do {
+          try cell.textLabel?.text = row?.get(SQLiteHelper.sharedInstance.Name);
+        } catch  { }
+        
         cell.detailTextLabel?.text = String(arc4random());
 
         return cell;

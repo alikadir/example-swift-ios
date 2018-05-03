@@ -59,7 +59,7 @@ class AnaSayfaViewController: UIViewController {
         note.applicationIconBadgeNumber = 13;
         note.alertBody = "Deneme mesaj 123";
         note.soundName = UILocalNotificationDefaultSoundName;
-        note.fireDate = Date(timeIntervalSinceNow: 2); // 2 sn sonra gönder.
+        note.fireDate = Date(timeIntervalSinceNow: 5); // 5 sn sonra gönder.
 
         UIApplication.shared.scheduleLocalNotification(note);
 
