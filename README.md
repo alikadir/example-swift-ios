@@ -2,11 +2,11 @@ This project has following features,
 - Reusable TableView cell for showing huge data 
 - Webview with local and remote web page
 - SQLite CRUD operations
-- Push notofocation with image and sound
+- Push notifocation with image and sound
 - Dynamic xib load
 - Geolocation servicesand showing on Map
 - Extension methods for Data Types
-- RESTful service comminications
+- RESTful service communications
 - Font icons
 - Read and Write on Local file
 - Image load and show
