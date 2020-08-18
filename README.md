@@ -14,3 +14,4 @@ This project has following features,
 - Screen navigation
 - OOP (inheritance etc.) with Swift
 - Splash Screen and Battery status
+
